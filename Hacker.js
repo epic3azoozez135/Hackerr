@@ -1,27 +1,5 @@
 const Discord = require("discord.js");
 const hngel = new Discord.Client();
-console.log('Hacked By GN Is here,');
-hngel.on('ready', () => {
-  console.log(`Logged in as ${hngel.user.tag} !`);
-
-});
-hngel.on('ready',  () => {
-    console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
-    console.log('  start = g ');
-    console.log('  start = gg');
-    console.log('  start = g1');
-    console.log('  start = .');
-    console.log('  start = -');
-    console.log('  start = ..');
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-console.log(`Logged in as  * [ " hngel " ] servers! [ " ${hngel.guilds.size} " ] Users! [ " ${hngel.users.size} " ]`);
-
-const tokn = ("NTEwODI5MzM1NTE5ODIxODI1.DxlXrg.oJiL5Fj3eGjXlTF5F3KG6-h6dp8") /// توكن حسابك مهم <
-//////////////////////////////////^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-    
 
 });
 var prefix = "-"

